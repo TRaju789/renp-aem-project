@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/renp" mode="merge"/>
+    <filter root="/content/renp" mode="merge"/>
+    <filter root="/content/dam/renp/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/renp" mode="merge"/>
+</workspaceFilter>

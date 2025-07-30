@@ -1,0 +1,15 @@
+<div class="carousel slide" data-bs-ride="carousel" id="${component.id}">
+  <div class="carousel-inner">
+    <sly data-sly-list.image="${resource.getChildren}">
+      <div class="carousel-item ${imageList.index == 0 ? 'active' : ''}">
+        <img src="${image.imagePath}" class="d-block w-100" alt="${image.alt || 'Slide'}">
+      </div>
+    </sly>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#${component.id}" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#${component.id}" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>

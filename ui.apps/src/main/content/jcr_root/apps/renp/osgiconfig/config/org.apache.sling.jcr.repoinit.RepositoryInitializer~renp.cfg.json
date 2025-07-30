@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/renp",
+        "create path (nt:unstructured) /content/dam/renp/jcr:content",
+        "set properties on /content/dam/renp/jcr:content\n  set cq:conf{String} to /conf/renp\n  set jcr:title{String} to \"RENP Projects\"\nend"
+    ]
+}

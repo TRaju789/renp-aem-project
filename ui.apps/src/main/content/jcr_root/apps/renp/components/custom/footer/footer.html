@@ -1,0 +1,8 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientLib.all @ categories='renp.custom'}"/>
+
+<footer style="background-color: ${properties.themeColor @ context='styleString'}">
+  <p>Author : ${properties.authorName}<br>
+  <a href="mailto:${properties.authorEmail}">${properties.authorEmail}</a></p>
+  <p>${properties.footerText}</p>
+</footer>

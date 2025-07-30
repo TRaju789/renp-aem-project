@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <authorName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Author Name"
+                        name="./authorName"/>
+                    <authorEmail
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Author Email"
+                        name="./authorEmail"/>
+                    <footerText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Text"
+                        name="./footerText"/>
+                    <themeColor
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Theme Color"
+                        name="./themeColor">
+                        <items jcr:primaryType="nt:unstructured">
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="#cd1313ff"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="#1bf054ff"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Blue"
+                                value="#007bff"/>
+                        </items>
+                    </themeColor>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

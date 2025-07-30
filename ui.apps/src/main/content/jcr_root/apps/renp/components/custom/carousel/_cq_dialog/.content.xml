@@ -1,0 +1,41 @@
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Carousel"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    xmlns:coral="http://www.adobe.com/jcr/coral/1.0">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <images
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                fieldLabel="Carousel Images">
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                    name="./images">
+                    <items jcr:primaryType="nt:unstructured">
+                        <imagePath
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                            name="./imagePath"
+                            fieldLabel="Image Path"
+                            rootPath="/content/dam"/>
+                        <alt
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            name="./alt"
+                            fieldLabel="Alt Text"/>
+                    </items>
+                </field>
+            </images>
+        </items>
+    </content>
+</jcr:root>
